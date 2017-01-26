@@ -40,16 +40,15 @@ class ClassTests(unittest.TestCase):
         type_int = 2
         self.assertEqual(type(factorial(2)), type(type_int))
     def test_factorial_0(self):
-        self.assertEqual(factoria(0), 1)
+        self.assertEqual(factorial(0), 1)
     def test_factorial_1(self):
         self.assertEqual(factorial(1), 1)
         ## Test that return len is 1
-    def test_factorial_len(self):
-        self.assertEqual(len(factorial(1)), 1) 
     def test_factorial_neg_5(self):
         self.assertEqual(factorial(-5), None)
     def test_factorial_5(self):
-        self.assertEqual(factorial(5), 20)
+        self.assertEqual(factorial(5), 120)
+    
    
 
 unittest.main(verbosity=2) 
